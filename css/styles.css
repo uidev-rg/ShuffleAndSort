@@ -1,0 +1,150 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom css */
+
+header{
+	background:#000;
+	color: #fff;
+	text-align:center;
+	padding:10px 0;
+}
+
+footer{
+	padding: 8px 0;
+	text-align:center;
+	font-style:italic;
+}
+
+.btn-container{
+	margin:15px 0;
+	text-align:center;
+}
+.btn {
+	min-width:28%;
+	box-shadow: 0px 4px 0px 0px #2B8EAD;
+	background:#72C3DC;
+	border-radius:5px;
+	border:0;
+	outline:0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:10px 30px;
+	text-transform:uppercase;
+}
+.btn:hover {
+	background:#72C3DC;
+}
+
+.card {
+	position:relative;
+	background:#efefef;
+	text-align: center;
+	color: #000;
+	padding: 0;
+	margin-bottom:3px;
+}
+
+.card-txt{
+	position:absolute;
+	left:0;
+	right:0;
+	top:5px;
+	color:#000;
+}
+
+.card-bg{
+	width:10px;
+	padding:15px 0;
+}
+
+@media only screen and (min-width: 376px) {
+	.main-container{
+		max-width:960px;
+		margin:0 auto;
+		overflow:hidden;
+	}
+	header{
+		background:#fff;
+		border-bottom:solid 3px #efefef;
+		color:black;
+	}
+	.grid-container{
+		float:left;
+		width:75%;
+	}
+	.card{
+		margin:0;
+		padding:0;
+		width:32.4%;
+		float:left;
+		color:#fff;
+		font-size:60px;
+	}
+	.card-txt{
+		top:60px;
+		color:#fff;
+	}
+	.card-bg{
+		width:100%;
+		padding:96px 0;
+	}
+	.btn-container{
+		float:right;
+		width:25%;
+		text-align:center;
+	}
+	
+	.btn {
+		min-width:80%;
+		margin: 15px auto 0;
+		display: block;
+	}
+}
